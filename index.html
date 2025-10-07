@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manish Kumar - Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p class="loading-text">Loading Portfolio...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand animate-fade-in">MK</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#projects" class="nav-link">Works</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="availability-badge animate-slide-up" style="animation-delay: 0.2s;">
+                    <span class="status-dot"></span>
+                    AVAILABLE FOR WORK JUN'25
+                </div>
+                <h1 class="hero-title">
+                    <span class="name animate-slide-up" style="animation-delay: 0.4s;">Manish Kumar</span>
+                    <span class="title-line animate-slide-up" style="animation-delay: 0.6s;">Full Stack Developer</span>
+                </h1>
+                <p class="hero-description animate-slide-up" style="animation-delay: 0.8s;">
+                    Open to job opportunities worldwide. Passionate about building polished, intuitive, and thoughtful digital experiences that leave a mark.
+                </p>
+                <div class="hero-actions animate-slide-up" style="animation-delay: 1s;">
+                    <a href="#projects" class="btn btn--primary">
+                        <span>View My Work</span>
+                        <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m9 18 6-6-6-6"/>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn btn--outline">
+                        <span>Get in Touch</span>
+                        <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m9 18 6-6-6-6"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image animate-fade-in" style="animation-delay: 1.2s;">
+                <img src="h1.jpg" alt="Manish Kumar">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header fade-in-section">
+                <h2 class="section-title">WHAT I DO / (SERVICES)</h2>
+                <p class="section-description">
+                    I specialize in building full-stack web applications that are fast, reliable, and user-friendly. With a solid foundation in both frontend and backend technologies, I help bring ideas to life whether it's for a business, a startup, or a product team.
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-in-section" style="animation-delay: 0.1s;">
+                    <div class="service-number">(01)</div>
+                    <h3 class="service-title">Full-Stack Development</h3>
+                    <p class="service-description">
+                        From frontend interactions to backend APIs, I build complete web solutions. I work with modern stacks to deliver apps that are scalable, maintainable, and ready for real-world users.
+                    </p>
+                    <div class="service-skills">
+                        <div class="skill-group">React, Node.js, Express.js</div>
+                        <div class="skill-group">REST APIs, Firebase, Docker</div>
+                        <div class="skill-group">Git, GitHub, Postman</div>
+                    </div>
+                </div>
+                <div class="service-card fade-in-section" style="animation-delay: 0.2s;">
+                    <div class="service-number">(02)</div>
+                    <h3 class="service-title">UI/UX & Frontend</h3>
+                    <p class="service-description">
+                        Design is more than looks — it's about clarity and connection. I design and develop clean, responsive interfaces that feel intuitive across devices. My focus is on clarity, accessibility, and seamless user experiences.
+                    </p>
+                    <div class="service-skills">
+                        <div class="skill-group">NextJs, TailwindCSS, GSAP</div>
+                        <div class="skill-group">Figma to Code</div>
+                        <div class="skill-group">HTML, CSS, JavaScript</div>
+                    </div>
+                </div>
+                <div class="service-card fade-in-section" style="animation-delay: 0.3s;">
+                    <div class="service-number">(03)</div>
+                    <h3 class="service-title">Optimization</h3>
+                    <p class="service-description">
+                        Beyond handling data, I'm driven by the challenge of turning complex raw inputs into reliable, usable systems. I enjoy designing pipelines that power insights and apply core CS principles to build for scale, speed, and stability.
+                    </p>
+                    <div class="service-skills">
+                        <div class="skill-group">Data Structures & Algorithms</div>
+                        <div class="skill-group">DBMS, OOP, OS Fundamentals</div>
+                        <div class="skill-group">Data Pipelines, ETL, and Scalability</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header fade-in-section">
+                <h2 class="section-title">SELECTED WORKS / (PROJECTS)</h2>
+                <p class="section-description">
+                    Thoughtfully crafted digital experiences that blend utility and aesthetics into something functional, memorable, and refined.
+                </p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card fade-in-section" style="animation-delay: 0.1s;">
+                    <div class="project-media">
+                        <div class="project-placeholder">
+                            <div class="placeholder-icon">🚀</div>
+                        </div>
+                        <div class="project-overlay">
+                            <svg class="project-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="m7 17 10-10"/>
+                                <path d="m7 7 10 0 0 10"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Modern Marketing Website</h3>
+                        <p class="project-subtitle">NURA</p>
+                        <p class="project-year">DEVELOPMENT 2025</p>
+                    </div>
+                </div>
+                <div class="project-card fade-in-section" style="animation-delay: 0.2s;">
+                    <div class="project-media">
+                        <div class="project-placeholder">
+                            <div class="placeholder-icon">💼</div>
+                        </div>
+                        <div class="project-overlay">
+                            <svg class="project-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="m7 17 10-10"/>
+                                <path d="m7 7 10 0 0 10"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Full-Stack Recruitment Platform</h3>
+                        <p class="project-subtitle">Job Portal</p>
+                        <p class="project-year">DEVELOPMENT 2025</p>
+                    </div>
+                </div>
+                <div class="project-card fade-in-section" style="animation-delay: 0.3s;">
+                    <div class="project-media">
+                        <div class="project-placeholder">
+                            <div class="placeholder-icon">⚡</div>
+                        </div>
+                        <div class="project-overlay">
+                            <svg class="project-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="m7 17 10-10"/>
+                                <path d="m7 7 10 0 0 10"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">SAAS Platform</h3>
+                        <p class="project-subtitle">Productivity SAAS</p>
+                        <p class="project-year">DEVELOPMENT 2025</p>
+                    </div>
+                </div>
+                <div class="project-card fade-in-section" style="animation-delay: 0.4s;">
+                    <div class="project-media">
+                        <div class="project-placeholder">
+                            <div class="placeholder-icon">🎬</div>
+                        </div>
+                        <div class="project-overlay">
+                            <svg class="project-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="m7 17 10-10"/>
+                                <path d="m7 7 10 0 0 10"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">ML Recommendation Engine</h3>
+                        <p class="project-subtitle">CineRec</p>
+                        <p class="project-year">DEVELOPMENT 2025</p>
+                    </div>
+                </div>
+                <div class="project-card fade-in-section" style="animation-delay: 0.5s;">
+                    <div class="project-media">
+                        <div class="project-placeholder">
+                            <div class="placeholder-icon">📸</div>
+                        </div>
+                        <div class="project-overlay">
+                            <svg class="project-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="m7 17 10-10"/>
+                                <path d="m7 7 10 0 0 10"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Code-to-Image Tool</h3>
+                        <p class="project-subtitle">Code2Img</p>
+                        <p class="project-year">DEVELOPMENT 2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header fade-in-section">
+                <h2 class="section-title">DEVELOPER DESIGNER CREATOR /</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category fade-in-section" style="animation-delay: 0.1s;">
+                    <h3 class="skill-category-title">Languages & Tools</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">SQL</span>
+                        <span class="skill-item">C++</span>
+                        <span class="skill-item">Java</span>
+                        <span class="skill-item">TypeScript</span>
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">Git</span>
+                        <span class="skill-item">Postman</span>
+                        <span class="skill-item">Docker</span>
+                        <span class="skill-item">Firebase</span>
+                    </div>
+                </div>
+                <div class="skill-category fade-in-section" style="animation-delay: 0.2s;">
+                    <h3 class="skill-category-title">Frameworks & Libraries</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">React</span>
+                        <span class="skill-item">Node.js</span>
+                        <span class="skill-item">Express.js</span>
+                        <span class="skill-item">Flask</span>
+                        <span class="skill-item">Bootstrap</span>
+                        <span class="skill-item">TailwindCSS</span>
+                        <span class="skill-item">Framer Motion</span>
+                        <span class="skill-item">GSAP</span>
+                    </div>
+                </div>
+                <div class="skill-category fade-in-section" style="animation-delay: 0.3s;">
+                    <h3 class="skill-category-title">Core CS Concepts</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Data Structures & Algorithms</span>
+                        <span class="skill-item">Database Management</span>
+                        <span class="skill-item">Object-Oriented Programming</span>
+                        <span class="skill-item">Operating Systems</span>
+                        <span class="skill-item">System Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content fade-in-section">
+                <h2 class="section-title">I'm a software engineer driven by a passion for turning ideas into clean, intuitive digital experiences. (ABOUT ME)</h2>
+                <p class="about-text">
+                    I am a passionate Software Engineer with a knack for building full-stack web applications using modern technologies like Next.js and Tailwind CSS. My journey in tech began with a curiosity for solving real-world problems through innovative solutions, which evolved into a love for crafting user-centric digital experiences. Beyond coding, I thrive in collaborative environments and enjoy tackling challenging problems with creative solutions. I aim to contribute to impactful projects that make a difference in users' lives.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-header fade-in-section">
+                    <h2 class="contact-title">LET'S MAKE IT HAPPEN</h2>
+                    <h3 class="contact-subtitle">Say Hello</h3>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="contact-form-container fade-in-section" style="animation-delay: 0.2s;">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                class="form-input" 
+                                placeholder="Drop a name"
+                            >
+                            <div class="input-line"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                class="form-input" 
+                                placeholder="Wanna hear back? Add your email"
+                            >
+                            <div class="input-line"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                rows="6" 
+                                class="form-input form-textarea" 
+                                placeholder="Say hello or drop a note..."
+                                required
+                            ></textarea>
+                            <div class="input-line"></div>
+                            <div class="error-message" id="messageError">Please enter your message.</div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn--primary btn--full-width" id="submitBtn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loader hidden">
+                                <div class="spinner"></div>
+                                Sending...
+                            </span>
+                        </button>
+                    </form>
+                    
+                    <!-- Success/Error Messages -->
+                    <div class="form-feedback">
+                        <div class="success-message hidden" id="successMessage">
+                            <svg class="feedback-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            Message sent successfully! I'll get back to you soon.
+                        </div>
+                        <div class="error-message-general hidden" id="errorMessage">
+                            <svg class="feedback-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <line x1="15" y1="9" x2="9" y2="15"/>
+                                <line x1="9" y1="9" x2="15" y2="15"/>
+                            </svg>
+                            Failed to send message. Please try again.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-footer fade-in-section" style="animation-delay: 0.4s;">
+                    <div class="footer-nav">
+                        <h4>Menu</h4>
+                        <div class="footer-links">
+                            <a href="#home" class="footer-link">Home</a>
+                            <a href="#services" class="footer-link">Services</a>
+                            <a href="#projects" class="footer-link">Works</a>
+                            <a href="#about" class="footer-link">About</a>
+                            <a href="#contact" class="footer-link">Contact</a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-social">
+                        <h4>Social</h4>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/manish-kumar-4b6bb6359/" target="_blank" rel="noopener noreferrer" class="social-link">
+                                <svg class="social-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="m9 9 6 6"/>
+                                    <path d="m15 9-6 6"/>
+                                </svg>
+                                LinkedIn
+                            </a>
+                            <a href="https://www.instagram.com/manish__pandatt/" target="_blank" rel="noopener noreferrer" class="social-link">
+                                <svg class="social-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="m9 9 6 6"/>
+                                    <path d="m15 9-6 6"/>
+                                </svg>
+                                Instagram
+                            </a>
+                            <a href="https://github.com/narutopandit" target="_blank" rel="noopener noreferrer" class="social-link">
+                                <svg class="social-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="m9 9 6 6"/>
+                                    <path d="m15 9-6 6"/>
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-time">
+                        <h4>LOCAL TIME</h4>
+                        <div id="clock" class="clock">--:--:--</div>
+                        <p class="timezone">IST (UTC+5:30)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress">
+        <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

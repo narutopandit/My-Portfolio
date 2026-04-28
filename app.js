@@ -2,12 +2,12 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize EmailJS
-    emailjs.init("YOUR_PUBLIC_KEY");
+    emailjs.init("_R8kPkmLDZF9lG4Nb");
     
     const EMAIL_CONFIG = {
-        serviceID: 'YOUR_SERVICE_ID',
-        templateID: 'YOUR_TEMPLATE_ID',
-        publicKey: 'YOUR_PUBLIC_KEY'
+        serviceID: 'service_flada0v',
+        templateID: 'template_oym6grc',
+        publicKey: '_R8kPkmLDZF9lG4Nb'
     };
 
     // DOM Elements
@@ -357,6 +357,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 if (icon) {
                     icon.style.transform = 'scale(1) rotate(0deg)';
+                }
+            });
+
+            card.addEventListener("click", () => {
+                const link = card.getAttribute("data-link");
+                if (link) {
+                    window.open(link, "_blank"); // opens in new tab
                 }
             });
         });
